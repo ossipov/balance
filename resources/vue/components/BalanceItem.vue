@@ -70,7 +70,7 @@
         },
         methods: {
             deleteEntry(){
-                this.$emit('deleteEntry', this.id)
+                this.$emit('deleteEntry', this.data.id)
             },
             editPanel(){
                 let active = this.$parent.$children.filter(function (el) {
