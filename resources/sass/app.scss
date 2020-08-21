@@ -1,0 +1,62 @@
+
+@tailwind base;
+
+@tailwind components;
+
+@import "fonts";
+
+@tailwind utilities;
+
+
+body {
+    @apply bg-gray-100;
+}
+
+section.header {
+    @apply bg-white;
+}
+
+
+.action-bar {
+    .notifications {
+        background-image: url("/images/alarm.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+
+        span {
+            display: none;
+        }
+    }
+}
+
+.container {
+    @apply mx-auto max-w-screen-md;
+}
+
+.btn {
+    @apply pt-2 pr-4 pb-2 pl-2 font-semibold text-xs uppercase inline-block bg-blue-500 rounded;
+
+    i.icon {
+        @apply p-2 mr-3;
+    }
+
+}
+
+
+i.icon {
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    &.add {
+        background-image: url('/images/add.svg');
+    }
+
+    &.import {
+        background-image: url('/images/import.svg');
+    }
+}
+
+.page-heading {
+    @apply bg-gray-800 pt-8 pb-6 text-white;
+    margin-bottom: 2.7rem
+}
